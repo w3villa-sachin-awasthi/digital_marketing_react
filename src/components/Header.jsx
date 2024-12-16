@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className="flex justify-between items-center ">
+        <div className="flex justify-between items-center md:px-[50px] px-[50px] lg:px[70px] xl:px-[100px] w-screen">
             <div className="">
                 <a className="btn btn-ghost text-xl ">Brandbuzz</a>
             </div>

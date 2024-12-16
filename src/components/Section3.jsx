@@ -20,9 +20,9 @@ function Section3() {
         }
     ]
     return (
-        <div className='flex w-full mt-[50px] flex-col  items-center'>
-            <div>We provide the best servives</div>
-            <div>let us unleash the full potential of bussiness with our data-driven strategy
+        <div className='flex w-full mt-[50px] flex-col  items-center md:px-[50px] px-[50px] lg:px[70px] xl:px-[100px] w-screen'>
+            <div className=' text-[26px] md:text-[40px] lg:text-[50px] xl:text-[60px] text-center'>We Provide The Best Servives</div>
+            <div className=' xl:text-[20px] lg:text-[18px] md-[14px]  text-slate-600 lg:w-[35%] md:w-[50%] w[80%] text-center'>let us unleash the full potential of bussiness with our data-driven strategy
             </div>
             <div className="flex justify-center w-full flex-wrap items-center ">
                 {

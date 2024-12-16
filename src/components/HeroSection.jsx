@@ -3,7 +3,7 @@ import img1 from '../images/photo1.png';
 import { AiFillCaretDown } from "react-icons/ai";
 function HeroSection() {
     return (
-        <div className='flex lg:flex-row flex-col  mt-[70px]'>
+        <div className='flex lg:flex-row flex-col  mt-[70px] md:px-[50px] px-[50px] lg:px[70px] xl:px-[100px] w-screen'>
             <div className="w-[50%]">
                 <div className='text-[50px] l'>We create</div>
                 <div className='text-[50px]'><span >solution</span> for </div>
