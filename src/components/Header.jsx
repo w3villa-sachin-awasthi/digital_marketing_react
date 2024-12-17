@@ -1,6 +1,14 @@
 import React from 'react'
 import { FaBars } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 function Header() {
+    const navigate=useNavigate();
+    function handleClick(){
+        localStorage.removeItem('username')
+        localStorage.removeItem('password');
+        navigate('/');
+        
+    }
     return (
         <div className="flex justify-between items-center md:px-[50px] px-[30px] lg:px[70px] xl:px-[100px] w-screen md:bg-slate-100 bg-orange-600">
             <div className="">
@@ -34,6 +42,7 @@ function Header() {
                         <li><a>Contact us</a></li>
                         <li><a>Services</a></li>
                         <li><a>Blogs</a></li>
+                        <li onClick={handleClick}><a>Sign Out</a></li>
                     </ul>
                 </div>
             </div>
