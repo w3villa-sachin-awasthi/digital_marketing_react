@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { FaBars } from "react-icons/fa6";
 function Header() {
     return (
-        <div className="flex justify-between items-center md:px-[50px] px-[50px] lg:px[70px] xl:px-[100px] w-screen">
+        <div className="flex justify-between items-center md:px-[50px] px-[30px] lg:px[70px] xl:px-[100px] w-screen md:bg-slate-100 bg-orange-600">
             <div className="">
                 <a className="btn btn-ghost text-xl ">Brandbuzz</a>
             </div>
@@ -13,13 +13,13 @@ function Header() {
               <button>Services</button>
               <button>Blog</button>
             </div>
-            <div  className='bg-orange-600 py-2 px-7 shadow-md rounded-[5px] shadow-slate-500 h-[35px]'>
+            <div  className='bg-orange-600 py-2 px-7 shadow-md rounded-[5px] shadow-slate-500 h-[35px] md:block hidden'>
                 SignUp
             </div>
             <div className="flex-none gap-2 md:hidden">
               
                 <div className="dropdown dropdown-end">
-                <button className='p-0 p-5 '>SignUp</button>
+                <button className='p-0 p-5 '> <FaBars className='text-[20px]'/> </button>
                    
                     <ul
                         tabIndex={0}

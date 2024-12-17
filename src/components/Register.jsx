@@ -10,36 +10,19 @@ function Register() {
     
  
     const handleClick = () => {
-      
-        let storedUser = localStorage.getItem('userinfo');
-    
-        if (storedUser) {
-        
-          let parsedUser = JSON.parse(storedUser);
-    
-      
-          if (username === parsedUser.username && password === parsedUser.password) {
-            console.log("Login successful:", parsedUser.username);
-            alert('Login successful!');
-            navigate('/home'); // Redirect to home page
-          } else {
-            console.log("Incorrect credentials");
-            alert('Incorrect username or password!');
-            navigate('/register'); // Redirect to register page
-          }
-        } else {
-          // If no user is found, register the new user
-          let obj = { username, password };
-          localStorage.setItem("userinfo", JSON.stringify(obj));
-          console.log("User registered:", obj.username);
-          alert('User not found. Registered successfully.');
-          navigate('/home'); // Redirect to home page
-        }
+      if(!username||!password){
+        alert('fill all the field')
+      }else{
+        let user=localStorage.setItem("username",username);
+        let pass=localStorage.setItem("password",password);
+          alert('user register succcessfully!');
+          navigate('/');
+      } 
       };
   
     return (
-      <div className="w-screen h-screen flex justify-center items-center">
-        <div className="h-[60%] flex flex-col bg-slate-800 w-[320px] rounded-xl p-4 border-fuchsia-600 text-slate-50 opacity-95 text-slate-150 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border">
+      <div className="w-screen h-screen flex justify-center items-center bg-orange-100">
+        <div className="h-[50%] flex flex-col bg-orange-600 w-[320px] rounded-xl p-4 border-2 border-slate-100 text-slate-50  text-slate-150  ">
           <div className="text-center my-2 text-[30px]">Signup</div>
   
         

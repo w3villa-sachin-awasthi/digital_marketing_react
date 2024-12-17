@@ -2,35 +2,28 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
-
+  
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
   const navigate=useNavigate();
  
   const handleClick = () => {
-    
-    let storedUser = localStorage.getItem('userinfo');
-    
-    if (storedUser) {
-      // Parse stored data into an object
-      let parsedUser = JSON.parse(storedUser);
-      
-      console.log("User already present:", parsedUser.username);
-      alert(`User already present: ${parsedUser.username}`);
-      navigate('/register'); // Redirect to register page
-    } else {
-     
-      let obj = { username: "your_username_here", password: "your_password_here" };
-      localStorage.setItem("userinfo", JSON.stringify(obj));
-
-      console.log("User registered:", obj.username);
-      alert('Login successful!');
-      navigate('/home'); // Redirect to home page
-    }
+       if(!username||!password){
+        alert('fill all the fields')
+       }else{
+        let uname=localStorage.getItem('username');
+        let upass=localStorage.getItem('password');
+        if(uname===username&&upass===password){
+               alert("login succcessfully done");
+               navigate('/home')
+        }else{
+            alert('invalid username and password')
+        }
+       }
   };
   return (
-    <div className=" w-screen h-screen flex justify-center items-center bg-slate-400">
-      <div className="h-[50%]  flex flex-col bg-slate-900 w-[320px]  rounded-xl p-4    opacity-95 text-slate-150   border border-cyan-600">
+    <div className=" w-screen h-screen flex justify-center items-center bg-orange-100">
+      <div className="h-[50%]  flex flex-col bg-orange-600 w-[320px]  rounded-xl p-4    opacity-95 text-slate-150   border border-cyan-600">
         <div className="text-center my-2 text-[30px] ">Signin</div>
 
         <div className="py-2">
