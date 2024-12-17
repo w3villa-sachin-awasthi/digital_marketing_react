@@ -7,11 +7,11 @@ function Footer() {
   return (
     <footer className="footer relative text-base-content p-10 bg-orange-100 pt-[80px]">
     <aside>
-      <div>Brandbuzz</div>
-      <p className='flex'>
-        <FaFacebookF className=' px-3 py-5 text-slate-100 rounded-[50%]'/> 
-        <FaInstagram className='px-4'/> 
-        <FaTwitter className=''/>
+      <div className='md:text-[35px] text-[30px] lg:text-[40px] text- '>Brandbuzz</div>
+      <p className='flex text-[25px] mt-4 px-6'>
+        <FaFacebookF className='bg-blue-400 rounded-[50%] text-[31px] mr-3'/> 
+        <FaInstagram className='bg-red-500 text-white  rounded-[31%] text-[31px] mr-3'/> 
+        <FaTwitter className='bg-blue-400 rounded-[25%] text-[31px] text-white mr-3'/>
       </p>
     </aside>
     <nav>
@@ -28,7 +28,7 @@ function Footer() {
       <a className="link link-hover">Jobs</a>
       <a className="link link-hover">Press kit</a>
     </nav>
-    <nav>
+    <nav className=''>
       <h6 className="footer-title">Resource</h6>
       <a className="link link-hover">Terms of use</a>
       <a className="link link-hover">Privacy policy</a>
