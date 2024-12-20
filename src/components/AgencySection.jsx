@@ -2,7 +2,7 @@ import React from 'react'
 import img from '../images/photo4.jpg'
 function AgencySection() {
     return (
-        <div className="w-[100%] flex flex-col lg:flex-row  mt-[140px] max-w-[1600px] mx-auto justify-center items-center lg:items-start   py-[65px] px-[20px] ">
+        <div className="w-[100%] flex flex-col lg:flex-row mt-[60px] md:mt-[100px] max-w-[1600px] mx-auto justify-center items-center lg:items-start   py-[65px] px-[20px] ">
             {/* Right Section: Content */}
             <div
                 className="

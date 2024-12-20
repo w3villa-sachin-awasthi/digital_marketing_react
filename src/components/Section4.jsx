@@ -53,7 +53,7 @@ function Section4() {
         </div>
 
        
-        <div className="flex justify-start space-x-4 mt-4">
+        <div className="flex justify-start space-x-4 mt-8">
           <Btn value="Get Started" />
           <BtnOranged value="Read More" />
         </div>
