@@ -12,34 +12,25 @@ import SectionCourausal from "./components/SectionCourausal";
 import AgencySection from "./components/AgencySection";
 function App() {
   return (
-    <div className="w-screen bg-slate-50 box-border">
-      <div className="  text-slate-950 max-w-[1600px] mx-auto bg-slate-50 "
-
-      >
-
-        {/* <Home></Home> */}
-        <Header></Header>
+    <div className="w-full bg-slate-50 box-border overflow-hidden">
+      <div className="text-slate-950 max-w-[1600px] mx-auto">
+        <Header />
         <HeroSection />
         <Section3 />
-
-
       </div>
-      <div className="text-slate-950  mx-auto bg-orange-100">
+      <div className="text-slate-950 bg-orange-100">
         <Section4 />
       </div>
-      <div className="  text-slate-950 max-w-[1600px] mx-auto bg-slate-50 "
-
-      >
-      <AgencySection></AgencySection>
-
+      <div className="text-slate-950 max-w-[1600px] mx-auto">
+        <AgencySection />
         <SectionCourausal />
       </div>
-      <div className="text-slate-950  mx-auto bg-orange-100">
-        <Footer></Footer>
+      <div className="text-slate-950 bg-orange-100">
+        <Footer />
       </div>
-
     </div>
   );
 }
+
 
 export default App;
