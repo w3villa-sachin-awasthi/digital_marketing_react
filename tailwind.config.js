@@ -7,10 +7,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        arial: ['Arial', 'sans-serif'], // Custom font family
+      },
+    },
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["light", "dark"],
+    themes: ["light"],
   },
 };

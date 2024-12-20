@@ -7,13 +7,9 @@ import SectionCourausal from './SectionCourausal'
 import Footer from './Footer'
 function Home() {
     return (
-        <div className='m-0 p-0 bg-slate-100 h-screen  font-sans'>
-            <Header></Header>
-            <HeroSection />
-            <Section3/>
-            <Section4/>
-            <SectionCourausal/>
-            <Footer/>
+        <div className=' bg-slate-50 h-screen '>
+           
+            {/* <Footer/> */}
         </div>
     )
 }

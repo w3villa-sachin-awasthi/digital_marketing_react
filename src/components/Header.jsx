@@ -2,26 +2,26 @@ import React from 'react'
 import { FaBars } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 function Header() {
-    const navigate=useNavigate();
+    // const navigate=useNavigate();
     function handleClick(){
-        localStorage.removeItem('username')
-        localStorage.removeItem('password');
-        navigate('/');
+        // localStorage.removeItem('username')
+        // localStorage.removeItem('password');
+        // navigate('/');
         
     }
     return (
-        <div className="flex justify-between items-center md:px-[50px] px-[30px] lg:px[70px] xl:px-[100px] w-screen md:bg-slate-100 bg-orange-600">
-            <div className="">
-                <a className="btn btn-ghost text-xl ">Brandbuzz</a>
+        <div className="flex justify-between items-center  w-[100%] md:bg-slate-50 bg-orange-600 md:mt-9 mt-0 px-[20px]">
+            <div className="text-[32px] md:text-[40px] font-semibold">
+                BrandBuzz
             </div>
-            <div className='w-[40%] hidden md:flex justify-between ' >
-              <button>Home</button>
+            <div className='w-[40%] hidden md:flex justify-between font-semibold' >
+              <button className='text-orange-600'>Home</button>
               <button>About us</button>
               <button>Contact</button>
               <button>Services</button>
               <button>Blog</button>
             </div>
-            <div  className='bg-orange-600 py-2 px-7 shadow-md rounded-[5px] shadow-slate-500 h-[35px] md:block hidden'>
+            <div  className='bg-orange-600 py-2 px-7 shadow-lg rounded-[5px] shadow-orange-300 text-white h-[35px] md:block hidden'>
                 SignUp
             </div>
             <div className="flex-none gap-2 md:hidden">

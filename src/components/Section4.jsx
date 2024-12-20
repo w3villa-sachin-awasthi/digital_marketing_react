@@ -13,7 +13,7 @@ function Section4() {
   ];
 
   return (
-    <div className="w-full flex flex-col lg:flex-row bg-orange-200 mt-12 justify-center items-center lg:items-start pt-6 md:px-12 px-6 lg:px-16 xl:px-24 pb-7">
+    <div className="w-[100%] flex flex-col lg:flex-row  mt-[140px] max-w-[1600px] mx-auto bg-orange-100 justify-center items-center lg:items-start   py-[65px]">
       {/* Left Section: Image */}
       <div className="w-full lg:w-1/2 flex justify-center mb-6 lg:mb-0">
         <img
@@ -26,7 +26,9 @@ function Section4() {
       {/* Right Section: Content */}
       <div
         className="
-          w-[80%] 
+        w-[100%]
+        sm:w-[80%]
+          md:w-[50%] 
           mx-auto 
           lg:w-1/2 
           flex flex-col 
