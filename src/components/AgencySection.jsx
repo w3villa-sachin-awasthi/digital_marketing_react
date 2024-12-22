@@ -6,7 +6,7 @@ function AgencySection() {
             {/* Right Section: Content */}
             <div
                 className="
-        w-[80%]
+        w-[90%]
           md:w-[50%] 
           mx-auto 
           lg:w-1/2 
@@ -20,7 +20,7 @@ function AgencySection() {
                 <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold lg:pt-[120px]">
                     Our <span className="text-orange-600">Agency's</span>
                 </div>
-                <div className="text-slate-900  sm:text-base lg:text-lg leading-relaxed w-3/4">
+                <div className="text-slate-900  sm:text-base  text-sm md:text-md lg:text-lg leading-relaxed w-full sm:w-3/4">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium error nihil vero nam nostrum  <br /> <br /> corrupti quisquam accusamus consequatur voluptate. Voluptatibus dolorem sit aperiam. Vitae, nulla unde. Magni inventore molestias officia eveniet? Quas in hic recusandae a dolorum adipisci, nulla ea!
                 </div>
 
