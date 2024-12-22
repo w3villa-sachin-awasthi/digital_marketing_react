@@ -10,7 +10,7 @@ function Header() {
         
     }
     return (
-        <div className="flex justify-between items-center  w-[100%] md:bg-slate-50 bg-orange-600 md:mt-9 mt-0 px-[20px]">
+        <div className="flex justify-between items-center  w-[100%] md:bg-slate-50 bg-orange-600 md:mt-5 mt-0 px-[20px]">
             <div className="text-[32px] md:text-[40px] font-semibold">
                 BrandBuzz
             </div>
@@ -21,8 +21,8 @@ function Header() {
               <button>Services</button>
               <button>Blog</button>
             </div>
-            <div  className='bg-orange-600 py-2 px-7 shadow-lg rounded-[5px] shadow-orange-300 text-white h-[35px] md:block hidden'>
-                SignUp
+            <div  className='bg-orange-600  shadow-sm rounded-[5px] shadow-orange-200 text-white h-[45px] px-8 md:flex hidden h- justify-center items-center'>
+               <div> SignUp</div>
             </div>
             <div className="flex-none gap-2 md:hidden">
               
